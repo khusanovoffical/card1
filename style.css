@@ -139,7 +139,7 @@ section::after {
 
 .card.back-face .magnetic-strip {
   position: absolute;
-  top: 15px;
+  top: 25px;
   left: 0;
   width: 100%;
   height: 45px;
@@ -153,7 +153,7 @@ section::after {
 }
 
 .card.back-face .signature {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -165,7 +165,9 @@ section::after {
     #fff 3px,
     #efefef 0px,
     #efefef 9px
-  );
+ 
+    );
+    /* bottom: 10px; */
 }
 .signature i {
   color: #000;
@@ -179,4 +181,9 @@ section::after {
 .card.back-face h5{
     font-size: 8px;
     margin-top: 15px;
+}
+.card.back-face h6{
+  margin-top: 12px;
+    /* margin-left: 20px; */
+    margin-right: 22px;
 }
