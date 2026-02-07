@@ -3,11 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media (max-width: 400px) {
-  .container {
-    transform: scale(0.9);
-  }
-}
 section {
   position: relative;
   min-height: 100vh;
@@ -192,4 +187,49 @@ section::after {
     /* margin-left: 20px; */
     margin-right: 22px;
 }
+/* MOBILE FIX */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
+section {
+  overflow: hidden;
+}
+
+/* kichik ekranlar uchun */
+@media (max-width: 480px) {
+  .container {
+    transform: scale(0.9);
+  }
+}
+/* GLOBAL FIX */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* PHONE (kichik ekranlar) */
+@media (max-width: 480px) {
+  .container {
+    transform: scale(0.85);
+  }
+}
+
+/* TABLET (o‘rtacha ekranlar) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    transform: scale(0.95);
+  }
+}
+
+/* KATTA PLANSHET / KICHIK NOUTBUK */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    transform: scale(1);
+  }
+                              }
